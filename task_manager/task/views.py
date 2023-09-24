@@ -33,7 +33,7 @@ class TaskRegistrationCreateAPIView(ListCreateAPIView):
         return Task.objects.filter(
             Q(create_user=self.request.user)
             | Q(subtasks__team=self.request.user.team)
-        )
+        ).distinct()
 
     def create(self, request, *args, **kwargs):
         """

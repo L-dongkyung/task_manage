@@ -59,9 +59,10 @@ class TaskUpdateSerializer(serializers.ModelSerializer):
 
 # subtask 등록.
 class SubTaskRegistrationSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField(read_only=True)
     class Meta:
         model = SubTask
-        fields = ('team', 'task')
+        fields = ('team', 'task', 'id')
 
 
 # subtask 삭제.
