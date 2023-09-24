@@ -258,7 +258,6 @@ class SubTaskCompleteAPIView(UpdateAPIView):
             return Response({"error": "Not Found Task"}, status=status.HTTP_400_BAD_REQUEST)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-        print("****", serializer.data)
 
         return Response(serializer.data)
 
