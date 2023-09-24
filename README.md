@@ -27,19 +27,27 @@ $ python manage.py runserver
 
 ## test coverage
 ```
-Name                                                             Stmts   Miss  Cover
-------------------------------------------------------------------------------------
-manage.py                                                           12      2    83%
-task\__init__.py                                                     0      0   100%
-task\admin.py                                                        1      0   100%
-task\apps.py                                                         4      0   100%
-user\apps.py                                                         4      0   100%
-user\models.py                                                      36     16    56%
-user\serializers.py                                                 17      1    94%
-user\tests.py                                                        1      0   100%
-user\urls.py                                                         4      0   100%
-user\views.py                                                       24      2    92%
-------------------------------------------------------------------------------------
-TOTAL                                                              416     44    89%
+Name                                                                                 Stmts   Miss  Cover
+--------------------------------------------------------------------------------------------------------
+manage.py                                                                               12      2    83%
+task\__init__.py                                                                         0      0   100%
+task\admin.py                                                                            1      0   100%
+task\apps.py                                                                             4      0   100%
+task\migrations\0001_initial.py                                                          5      0   100%
+task\migrations\0002_remove_task_subtask_subtask_task_task_create_user_and_more.py       6      0   100%
+task\migrations\0003_alter_task_create_user.py                                           6      0   100%
+task\migrations\0004_alter_subtask_task.py                                               5      0   100%
+task\migrations\0005_alter_subtask_completed_date.py                                     4      0   100%
+task\migrations\0006_alter_subtask_unique_together.py                                    4      0   100%
+task\migrations\__init__.py                                                              0      0   100%
+task\models.py                                                                          22      2    91%
+task\pagination.py                                                                       4      0   100%
+task\serializers.py                                                                     64      5    92%
+user\serializers.py                                                                     17      1    94%
+user\tests.py                                                                            1      0   100%
+user\urls.py                                                                             4      0   100%
+user\views.py                                                                           24      2    92%
+--------------------------------------------------------------------------------------------------------
+TOTAL                                                                                  416     43    90%
 
 ```
